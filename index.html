@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Pacifico Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Righteous FOnt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+	<!-- Favicon Image -->
+	  <link rel="shortcut icon" type="image/jpg" href="images/ssit.png"/>
+    <title>SSIT | IT Fun Week</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <div class="header-container">
+       
+        <h1 class="brand-logo"> <img src="images/ssit.png" alt="SSIT Logo"> IT Fun Week</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#teams-section">Teams</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+            <a href="">Link4</a>
+        </nav>
+    </div>
+    </header>
+    <section class="teams" id="teams-section">
+      <div class="row marquee-text">
+          <marquee behavior="" direction="">IT Fun Week - - - Vote For Your Team! - - - IT Fun Week - - - Vote For Your Team! - - - IT Fun Week - - - Vote For Your Team! - - - IT Fun Week - - - Vote For Your Team! - - - IT Fun Week - - - Vote For Your Team!  </marquee>
+      </div>
+      <!-- 4th Year Vote Button -->
+      <div class="team-cont">
+        <div class="team-cont-card">
+          <div class="card-image">
+            <img src="images/4thyear.png" alt="4th Year Team">
+          </div>
+          <div class="card-contents">
+            <h5 class="card-title">Total Vote:</h5>
+            <p class="vote-count" id="count4th">0</p>
+            <button class="btn btn-primary" id= "vote4th" onclick="increment4th()">Vote</button>
+          </div>
+        </div>
+
+        <!-- 3rd Year Vote Button -->
+        <div class="team-cont-card">
+          <div class="card-image">
+            <img src="images/3rdyear.png" alt="4th Year Team">
+          </div>
+          <div class="card-contents">
+            <h5 class="card-title">Total Vote:</h5>
+            <p class="vote-count" id="count3rd">0</p>
+            <button class="btn btn-danger" id= "vote3rd" onclick="increment3rd()">Vote</button>
+          </div>
+        </div>
+
+        <!-- 2nd Year Vote Button  -->
+        <div class="team-cont-card">
+          <div class="card-image">
+            <img src="images/2ndyear.png" alt="4th Year Team">
+          </div>
+          <div class="card-contents">
+            <h5 class="card-title">Total Vote:</h5>
+            <p class="vote-count" id="count2nd">0</p>             
+            <button class="btn btn-warning" id= "vote2nd" onclick="increment2nd()">Vote</button>
+          </div>
+        </div> 
+
+         <!-- 1st Year Vote Button  -->
+        <div class="team-cont-card">
+          <div class="card-image">
+            <img src="images/1styear.png" alt="4th Year Team">
+          </div>
+          <div class="card-contents">
+            <h5 class="card-title">Total Vote:</h5>
+            <p class="vote-count" id="count1st">0</p>
+            <button class="btn btn-success" id= "vote1st" onclick="increment1st()">Vote</button>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <section class="events">
+      <h1 class="event-header text-center">SSIT Fun Week Events and Tournaments</h1>
+      <div class="events-cont-card">
+        <div class="event-image">
+          <img src="images/website-making-poster.jpg" alt="Website Making Poster">
+        </div>
+        <div class="event-message">
+          <h1>Website Development</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus earum commodi quidem asperiores perspiciatis porro laborum, voluptatem iusto quisquam inventore, libero maxime blanditiis, nam modi adipisci tenetur consequatur? Totam.</p>
+        </div>
+      </div>
+
+        <div class="events-cont-card">
+          <div class="event-message">
+            <h1>Facebook Frame Making Contest</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam natus earum commodi quidem asperiores perspiciatis porro laborum, voluptatem iusto quisquam inventore, libero maxime blanditiis, nam modi adipisci tenetur consequatur? Totam.</p>
+          </div>
+          <div class="event-image">
+            <img src="images/fb-frame-making-poster.png" alt="Website Making Poster">
+          </div>
+
+      </div>
+    </section>
+    <script src="vote.js"></script>  
+</body>
+</html>
